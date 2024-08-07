@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-SV">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <header>
+        <section class="header">
+            <img class="img_header" src="assets/Logo.png" alt="Logo de Alura">
+            <h1 class="titulo_header">Encriptador de texto</h1>
+        </section>
+    </header>
+
+    <div class="mensaje" id="mensaje"></div>
+
+    <main class="principal">
+        <section class="contenido_entrada">
+            <textarea id="contenido_entrada_texto" class="contenido_entrada_texto" type="text"
+                placeholder="Ingrese el texto aquí"></textarea>
+            <span id="contenido_entrada_info" class="contenido_entrada_info"><img src="assets/informacion.png" alt="">
+                Solo letras minúsculas y sin acentos</span>
+            <section class="contenido_entrada_botones">
+                <button id="btn_encriptar">Encriptar</button>
+                <button id="btn_desencriptar">Desencriptar</button>
+                <button id="btn_limpiar">Limpiar</button>
+            </section>
+        </section>
+
+        <section class="salida">
+            <div class="resultado_salida" id="resultado_salida">
+                <img class="imagen_salida" src="assets/imagen.png">
+                <h1 class="titulo_salida">¡Ningún mensaje fue encontrado!</h1>
+                <p class="texto_salida">Ingresa el texto que desees encriptar o desencriptar.
+                </p>
+            </div>
+            <p id="texto_resultado_salida" readonly class="texto_resultado_salida"></p>
+            <button id="btn_copiar" class="boton_resultado_salida">Copiar</button>
+        </section>
+    </main>
+    <footer id="footer" class="footer">
+        <p>Desarrollado por Iveth García © 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
